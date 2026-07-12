@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – Fit Fuel</title>
+<style>
+  :root {
+    --primary: #00C896;
+    --bg: #0A0F1E;
+    --surface: #111827;
+    --border: #1E293B;
+    --text: #F8FAFC;
+    --muted: #94A3B8;
+    --accent: #6C63FF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, #00C896, #6C63FF);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .app-name { font-size: 20px; font-weight: 700; }
+  .app-sub  { font-size: 12px; color: var(--muted); }
+  main {
+    max-width: 760px;
+    margin: 48px auto;
+    padding: 0 24px 80px;
+  }
+  h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+  h2 {
+    font-size: 17px; font-weight: 700;
+    color: var(--primary);
+    margin: 36px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  p  { color: #CBD5E1; margin-bottom: 14px; }
+  ul { color: #CBD5E1; padding-left: 20px; margin-bottom: 14px; }
+  li { margin-bottom: 6px; }
+  a  { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .badge {
+    display: inline-block;
+    background: rgba(0,200,150,.12);
+    color: var(--primary);
+    border: 1px solid rgba(0,200,150,.25);
+    border-radius: 6px;
+    font-size: 12px; font-weight: 600;
+    padding: 2px 10px;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+  .card p { margin: 0; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    margin-top: 60px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">💪</div>
+    <div>
+      <div class="app-name">Fit Fuel</div>
+      <div class="app-sub">Smart Fitness & Nutrition Tracker</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: June 1, 2025 &nbsp;·&nbsp; Last updated: June 1, 2025</p>
+  <span class="badge">📱 Mobile App</span>
+
+  <p>
+    This Privacy Policy describes how <strong>Fit Fuel</strong> ("we", "our", or "us")
+    handles your information when you use our mobile application. We are committed to
+    protecting your privacy and being transparent about our data practices.
+  </p>
+
+  <!-- 1 -->
+  <h2>1. Information We Collect</h2>
+  <p>Fit Fuel is designed as a <strong>local-first application</strong>. The vast majority
+  of your data never leaves your device.</p>
+  <p><strong>Data stored only on your device:</strong></p>
+  <ul>
+    <li>Calorie logs and food entries (name, calories, macros, meal type, timestamp)</li>
+    <li>Water intake logs (amount in ml, timestamp)</li>
+    <li>Workout sessions (name, type, duration, sets/reps, calories burned, timestamp)</li>
+    <li>Weight entries (weight in kg, optional note, timestamp)</li>
+    <li>App preferences (theme mode, daily goals, reminder settings)</li>
+  </ul>
+  <p><strong>Data used for AI Diet Plan generation (optional feature):</strong></p>
+  <ul>
+    <li>Age, weight, height, gender, fitness goal, and activity level — entered
+        voluntarily by you when you request a diet plan. This data is processed
+        <em>on-device</em> using a local calculation engine (Mifflin-St Jeor formula)
+        and is <strong>not transmitted to any server</strong>.</li>
+  </ul>
+
+  <!-- 2 -->
+  <h2>2. Data We Do Not Collect</h2>
+  <p>We do not collect, store, or transmit:</p>
+  <ul>
+    <li>Your name, email address, or any account credentials</li>
+    <li>Location data or GPS coordinates</li>
+    <li>Device identifiers, advertising IDs, or fingerprints</li>
+    <li>Contacts, photos, or any other media</li>
+    <li>Health data from Apple Health or Google Fit (no integration exists)</li>
+    <li>Crash reports or analytics telemetry</li>
+    <li>Payment or financial information</li>
+  </ul>
+
+  <!-- 3 -->
+  <h2>3. How We Use Your Information</h2>
+  <p>All data processing happens locally on your device to provide the following features:</p>
+  <ul>
+    <li>Displaying your daily calorie, water, and workout summaries</li>
+    <li>Generating your weight-progress chart</li>
+    <li>Calculating a personalized diet plan using your body metrics</li>
+    <li>Sending local push notifications for water reminders (using
+        <code>flutter_local_notifications</code> — no server involved)</li>
+    <li>Persisting your preferences (theme, goals) across app sessions</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2>4. Local Notifications</h2>
+  <p>
+    Fit Fuel AI may request permission to send you <strong>local notifications</strong> to
+    remind you to drink water. These notifications are scheduled entirely on-device by the
+    <code>flutter_local_notifications</code> package. No notification content is ever sent
+    to or from a remote server.
+  </p>
+  <p>You can disable notifications at any time in your device's system settings.</p>
+
+  <!-- 5 -->
+  <h2>5. Data Storage & Security</h2>
+  <p>
+    Your fitness data is stored using <strong>Hive</strong>, an encrypted local database
+    on your device. App preferences are stored using
+    <strong>SharedPreferences</strong>. Neither storage mechanism sends data off-device.
+  </p>
+  <p>
+    Data security depends on your device's built-in security measures (screen lock,
+    encryption). We recommend keeping your device up-to-date and protected with a PIN
+    or biometric lock.
+  </p>
+
+  <!-- 6 -->
+  <h2>6. Third-Party Services</h2>
+  <p>
+    Fit Fuel does not currently integrate any third-party analytics, advertising, or
+    crash-reporting SDKs. The only external resources loaded at runtime are
+    <strong>Google Fonts</strong> (typography), which may result in a network request to
+    Google's CDN on first launch to download the font files. After initial download,
+    fonts are cached locally. For details on Google's data practices, see
+    <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+  </p>
+
+  <!-- 7 -->
+  <h2>7. Children's Privacy</h2>
+  <p>
+    Fit Fuel is not directed at children under the age of 13 (or 16 in the European
+    Economic Area). We do not knowingly collect personal information from children.
+    If you believe a child has provided us with personal data, please contact us and
+    we will take steps to delete that information.
+  </p>
+
+  <!-- 8 -->
+  <h2>8. Your Rights</h2>
+  <p>Because all data is stored locally on your device, you have full control:</p>
+  <ul>
+    <li><strong>Access:</strong> All your data is visible within the app at all times.</li>
+    <li><strong>Deletion:</strong> Uninstalling the app permanently deletes all locally
+        stored data. Individual entries can also be deleted inside the app.</li>
+    <li><strong>Portability:</strong> No data export feature is currently offered, as
+        no data is stored on our servers.</li>
+  </ul>
+  <p>
+    If you are a resident of the European Economic Area (EEA) or California and believe
+    you have additional rights under GDPR or CCPA, please contact us. Given that we
+    collect no personal data on our servers, most regulatory obligations do not apply,
+    but we are happy to assist with any questions.
+  </p>
+
+  <!-- 9 -->
+  <h2>9. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. When we do, we will update the
+    "Last updated" date at the top of this page. For significant changes, we will post
+    a notice within the app. Continued use of Fit Fuel after changes are posted
+    constitutes your acceptance of the updated policy.
+  </p>
+
+  <!-- 10 -->
+  <h2>10. Contact Us</h2>
+  <div class="card">
+    <p>
+      If you have any questions, concerns, or requests regarding this Privacy Policy,
+      please contact us at:<br><br>
+      📧 <a href="mailto:shuvo4727@gmail.com">shuvo4727@gmail.com</a><br>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Fit Fuel. All rights reserved.
+  &nbsp;·&nbsp;
+  <a href="#">Back to top ↑</a>
+</footer>
+
+</body>
+</html>

@@ -1,250 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy – Fit Fuel</title>
-<style>
-  :root {
-    --primary: #00C896;
-    --bg: #0A0F1E;
-    --surface: #111827;
-    --border: #1E293B;
-    --text: #F8FAFC;
-    --muted: #94A3B8;
-    --accent: #6C63FF;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 15px;
-    line-height: 1.7;
-  }
-  header {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 20px 0;
-  }
-  .header-inner {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-  .logo {
-    width: 44px; height: 44px;
-    background: linear-gradient(135deg, #00C896, #6C63FF);
-    border-radius: 12px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px;
-  }
-  .app-name { font-size: 20px; font-weight: 700; }
-  .app-sub  { font-size: 12px; color: var(--muted); }
-  main {
-    max-width: 760px;
-    margin: 48px auto;
-    padding: 0 24px 80px;
-  }
-  h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
-  .meta { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
-  h2 {
-    font-size: 17px; font-weight: 700;
-    color: var(--primary);
-    margin: 36px 0 12px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-  }
-  p  { color: #CBD5E1; margin-bottom: 14px; }
-  ul { color: #CBD5E1; padding-left: 20px; margin-bottom: 14px; }
-  li { margin-bottom: 6px; }
-  a  { color: var(--primary); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .badge {
-    display: inline-block;
-    background: rgba(0,200,150,.12);
-    color: var(--primary);
-    border: 1px solid rgba(0,200,150,.25);
-    border-radius: 6px;
-    font-size: 12px; font-weight: 600;
-    padding: 2px 10px;
-    margin-bottom: 24px;
-  }
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 20px 24px;
-    margin: 20px 0;
-  }
-  .card p { margin: 0; }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 12px;
-    border-top: 1px solid var(--border);
-    padding: 24px;
-    margin-top: 60px;
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - Smart Sub Safe</title>
+  <meta name="description" content="Privacy Policy for Smart Sub Safe.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f9fb;
+      --surface: #ffffff;
+      --text: #18202a;
+      --muted: #5d6875;
+      --border: #dde5ee;
+      --accent: #176b87;
+      --accent-soft: #e6f4f7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #10151b;
+        --surface: #171e26;
+        --text: #edf3f7;
+        --muted: #b3bfca;
+        --border: #2c3743;
+        --accent: #67c7df;
+        --accent-soft: #17323b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 18px;
+    }
+
+    .document {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--accent);
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .summary {
+      background: var(--accent-soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin: 20px 0 28px;
+    }
+
+    .footer {
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 32px;
+      padding-top: 18px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 18px 12px;
+      }
+
+      .document {
+        padding: 22px;
+        border-radius: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <article class="document">
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        Effective date: July 16, 2026<br>
+        App: Smart Sub Safe
+      </p>
 
-<header>
-  <div class="header-inner">
-    <div class="logo">💪</div>
-    <div>
-      <div class="app-name">Fit Fuel</div>
-      <div class="app-sub">Smart Fitness & Nutrition Tracker</div>
-    </div>
-  </div>
-</header>
+      <section class="summary" aria-label="Short summary">
+        <p>
+          Smart Sub Safe helps you track subscriptions, bills, trials, budgets,
+          and reminders. Your subscription records are stored locally on your
+          device. The app uses Google AdMob to show ads and may use a network
+          request to fetch currency exchange rates.
+        </p>
+      </section>
 
-<main>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: June 1, 2025 &nbsp;·&nbsp; Last updated: June 1, 2025</p>
-  <span class="badge">📱 Mobile App</span>
+      <h2>1. Who We Are</h2>
+      <p>
+        Smart Sub Safe is provided by the app developer. For privacy questions,
+        requests, or concerns, contact:
+        <a href="mailto:shuvo4727@gmail.com">shuvo4727@gmail.com</a>.
+      </p>
 
-  <p>
-    This Privacy Policy describes how <strong>Fit Fuel</strong> ("we", "our", or "us")
-    handles your information when you use our mobile application. We are committed to
-    protecting your privacy and being transparent about our data practices.
-  </p>
+      <h2>2. Information You Provide in the App</h2>
+      <p>
+        Smart Sub Safe lets you enter subscription and bill information such as:
+      </p>
+      <ul>
+        <li>Subscription or service name</li>
+        <li>Price, currency, billing cycle, and renewal date</li>
+        <li>Category, notes, active status, and trial end date</li>
+        <li>Monthly budget and app settings such as theme and base currency</li>
+      </ul>
+      <p>
+        This information is stored locally on your device using app storage. We
+        do not operate a server that receives or stores your subscription list.
+      </p>
 
-  <!-- 1 -->
-  <h2>1. Information We Collect</h2>
-  <p>Fit Fuel is designed as a <strong>local-first application</strong>. The vast majority
-  of your data never leaves your device.</p>
-  <p><strong>Data stored only on your device:</strong></p>
-  <ul>
-    <li>Calorie logs and food entries (name, calories, macros, meal type, timestamp)</li>
-    <li>Water intake logs (amount in ml, timestamp)</li>
-    <li>Workout sessions (name, type, duration, sets/reps, calories burned, timestamp)</li>
-    <li>Weight entries (weight in kg, optional note, timestamp)</li>
-    <li>App preferences (theme mode, daily goals, reminder settings)</li>
-  </ul>
-  <p><strong>Data used for AI Diet Plan generation (optional feature):</strong></p>
-  <ul>
-    <li>Age, weight, height, gender, fitness goal, and activity level — entered
-        voluntarily by you when you request a diet plan. This data is processed
-        <em>on-device</em> using a local calculation engine (Mifflin-St Jeor formula)
-        and is <strong>not transmitted to any server</strong>.</li>
-  </ul>
+      <h2>3. Advertising and Google AdMob</h2>
+      <p>
+        Smart Sub Safe uses Google AdMob to display app open, banner,
+        interstitial, and native ads. Google and its partners may collect and
+        process information from your device to deliver ads, measure ad
+        performance, prevent fraud and abuse, and provide or improve advertising
+        services.
+      </p>
+      <p>
+        Information processed by Google advertising services may include the
+        app name, device information, IP address, general location inferred from
+        IP address, advertising identifiers, and ad interaction data. Depending
+        on your device settings and consent choices, ads may be personalized or
+        non-personalized.
+      </p>
+      <p>
+        Learn more from Google:
+      </p>
+      <ul>
+        <li>
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">
+            How Google uses information from sites or apps that use Google services
+          </a>
+        </li>
+        <li>
+          <a href="https://policies.google.com/privacy" rel="noopener">
+            Google Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="https://adssettings.google.com/" rel="noopener">
+            Google Ads Settings
+          </a>
+        </li>
+      </ul>
 
-  <!-- 2 -->
-  <h2>2. Data We Do Not Collect</h2>
-  <p>We do not collect, store, or transmit:</p>
-  <ul>
-    <li>Your name, email address, or any account credentials</li>
-    <li>Location data or GPS coordinates</li>
-    <li>Device identifiers, advertising IDs, or fingerprints</li>
-    <li>Contacts, photos, or any other media</li>
-    <li>Health data from Apple Health or Google Fit (no integration exists)</li>
-    <li>Crash reports or analytics telemetry</li>
-    <li>Payment or financial information</li>
-  </ul>
+      <h2>4. Consent and Privacy Choices</h2>
+      <p>
+        Where required, the app may ask for your consent before requesting
+        personalized ads. You may also use the in-app Privacy Choices option
+        when it is available. You can control ad personalization through your
+        device settings and through Google Ads Settings.
+      </p>
 
-  <!-- 3 -->
-  <h2>3. How We Use Your Information</h2>
-  <p>All data processing happens locally on your device to provide the following features:</p>
-  <ul>
-    <li>Displaying your daily calorie, water, and workout summaries</li>
-    <li>Generating your weight-progress chart</li>
-    <li>Calculating a personalized diet plan using your body metrics</li>
-    <li>Sending local push notifications for water reminders (using
-        <code>flutter_local_notifications</code> — no server involved)</li>
-    <li>Persisting your preferences (theme, goals) across app sessions</li>
-  </ul>
+      <h2>5. Currency Exchange Requests</h2>
+      <p>
+        If the app fetches currency exchange rates, it may make a network
+        request to an exchange-rate service. That service may receive technical
+        information such as your IP address and the requested base currency as
+        part of normal internet communication.
+      </p>
 
-  <!-- 4 -->
-  <h2>4. Local Notifications</h2>
-  <p>
-    Fit Fuel AI may request permission to send you <strong>local notifications</strong> to
-    remind you to drink water. These notifications are scheduled entirely on-device by the
-    <code>flutter_local_notifications</code> package. No notification content is ever sent
-    to or from a remote server.
-  </p>
-  <p>You can disable notifications at any time in your device's system settings.</p>
+      <h2>6. Notifications</h2>
+      <p>
+        Smart Sub Safe can schedule local renewal and trial reminders on your
+        device. Notification scheduling is used only to remind you about the
+        subscription information you saved in the app. You can disable
+        notifications in the app settings or device settings.
+      </p>
 
-  <!-- 5 -->
-  <h2>5. Data Storage & Security</h2>
-  <p>
-    Your fitness data is stored using <strong>Hive</strong>, an encrypted local database
-    on your device. App preferences are stored using
-    <strong>SharedPreferences</strong>. Neither storage mechanism sends data off-device.
-  </p>
-  <p>
-    Data security depends on your device's built-in security measures (screen lock,
-    encryption). We recommend keeping your device up-to-date and protected with a PIN
-    or biometric lock.
-  </p>
+      <h2>7. How We Use Information</h2>
+      <p>
+        The app uses locally stored information to:
+      </p>
+      <ul>
+        <li>Show your subscription list and upcoming bills</li>
+        <li>Calculate monthly totals, budgets, and analytics</li>
+        <li>Schedule renewal and trial reminders</li>
+        <li>Remember your settings and preferences</li>
+      </ul>
 
-  <!-- 6 -->
-  <h2>6. Third-Party Services</h2>
-  <p>
-    Fit Fuel does not currently integrate any third-party analytics, advertising, or
-    crash-reporting SDKs. The only external resources loaded at runtime are
-    <strong>Google Fonts</strong> (typography), which may result in a network request to
-    Google's CDN on first launch to download the font files. After initial download,
-    fonts are cached locally. For details on Google's data practices, see
-    <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
-  </p>
+      <h2>8. Sharing of Information</h2>
+      <p>
+        We do not sell your subscription records. We do not share your locally
+        stored subscription records with our own server. Third-party services,
+        including Google AdMob and any exchange-rate provider used by the app,
+        may process information as described in their own privacy policies.
+      </p>
 
-  <!-- 7 -->
-  <h2>7. Children's Privacy</h2>
-  <p>
-    Fit Fuel is not directed at children under the age of 13 (or 16 in the European
-    Economic Area). We do not knowingly collect personal information from children.
-    If you believe a child has provided us with personal data, please contact us and
-    we will take steps to delete that information.
-  </p>
+      <h2>9. Data Retention and Deletion</h2>
+      <p>
+        Subscription records and settings remain on your device until you edit
+        them, delete them, or uninstall/clear the app data. Because this data is
+        stored locally, deleting the app or clearing app storage removes the
+        app's local records from that device.
+      </p>
 
-  <!-- 8 -->
-  <h2>8. Your Rights</h2>
-  <p>Because all data is stored locally on your device, you have full control:</p>
-  <ul>
-    <li><strong>Access:</strong> All your data is visible within the app at all times.</li>
-    <li><strong>Deletion:</strong> Uninstalling the app permanently deletes all locally
-        stored data. Individual entries can also be deleted inside the app.</li>
-    <li><strong>Portability:</strong> No data export feature is currently offered, as
-        no data is stored on our servers.</li>
-  </ul>
-  <p>
-    If you are a resident of the European Economic Area (EEA) or California and believe
-    you have additional rights under GDPR or CCPA, please contact us. Given that we
-    collect no personal data on our servers, most regulatory obligations do not apply,
-    but we are happy to assist with any questions.
-  </p>
+      <h2>10. Security</h2>
+      <p>
+        We use local app storage for your subscription records. No method of
+        storage or transmission is completely secure, but the app is designed to
+        keep your subscription records on your device rather than sending them
+        to a developer-operated backend.
+      </p>
 
-  <!-- 9 -->
-  <h2>9. Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time. When we do, we will update the
-    "Last updated" date at the top of this page. For significant changes, we will post
-    a notice within the app. Continued use of Fit Fuel after changes are posted
-    constitutes your acceptance of the updated policy.
-  </p>
+      <h2>11. Children's Privacy</h2>
+      <p>
+        Smart Sub Safe is not directed to children under 13 years old. We do
+        not knowingly collect personal information from children. If you believe
+        a child has provided personal information through the app, contact us so
+        we can review the concern.
+      </p>
 
-  <!-- 10 -->
-  <h2>10. Contact Us</h2>
-  <div class="card">
-    <p>
-      If you have any questions, concerns, or requests regarding this Privacy Policy,
-      please contact us at:<br><br>
-      📧 <a href="mailto:shuvo4727@gmail.com">shuvo4727@gmail.com</a><br>
-    </p>
-  </div>
+      <h2>12. International Users</h2>
+      <p>
+        Third-party services used by the app, such as Google AdMob, may process
+        information in countries other than your own. Their processing is
+        governed by their applicable privacy terms and policies.
+      </p>
 
-</main>
+      <h2>13. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy when the app changes or when legal,
+        operational, or third-party service requirements change. The updated
+        version will show a new effective date.
+      </p>
 
-<footer>
-  &copy; 2026 Fit Fuel. All rights reserved.
-  &nbsp;·&nbsp;
-  <a href="#">Back to top ↑</a>
-</footer>
+      <h2>14. Contact Us</h2>
+      <p>
+        If you have questions about this Privacy Policy or Smart Sub Safe's
+        privacy practices, contact us at
+        <a href="mailto:shuvo4727@gmail.com">shuvo4727@gmail.com</a>.
+      </p>
 
+      <p class="footer">
+        This page is intended as a practical privacy policy template for Smart
+        Sub Safe. Review it before publishing to ensure it matches the final
+        app behavior and your legal requirements.
+      </p>
+    </article>
+  </main>
 </body>
 </html>
